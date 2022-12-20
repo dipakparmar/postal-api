@@ -17,8 +17,15 @@ cp .env.example .env
 # open .env and modify the environment variables (if needed)
 ```
 
-
 ## Features
+
+- **Authentication**: Email and password login
+- **Domains**: list domains, list domain by id
+- **Organizations**: list organizations, list organization by id
+- **Email Servers**: list email servers, list email server by id
+
+
+## Tech Stack
 
 - **ORM**: [Sequelize](https://sequelize.org/)  orm for object data modeling
 - **Migration and Seed**: DB migration and Seed using [Sequelize-CLI](https://github.com/sequelize/cli) 

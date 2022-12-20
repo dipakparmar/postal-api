@@ -1,6 +1,6 @@
 # Postal Mail Server REST API
 
-
+[![Docker Image Version (latest by date)](https://img.shields.io/docker/v/dipakparmar/postal-api?label=postal-api&logo=docker&sort=date)](https://hub.docker.com/r/dipakparmar/postal-api)
 ## Manual Installation
 
 Install the dependencies:

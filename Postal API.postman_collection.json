@@ -1,0 +1,242 @@
+{
+	"info": {
+		"_postman_id": "8f7eda82-ba32-4c45-a309-dffb7e5afdc4",
+		"name": "Postal API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12966180"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"user@example.com\",\n    \"password\": \"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_HOST}}/api/auth/login",
+							"host": [
+								"{{API_HOST}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"user@example.com\",\n    \"password\": \"123456\",\n    \"confirm_password\": \"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_HOST}}/api/auth/register",
+							"host": [
+								"{{API_HOST}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Server",
+			"item": [
+				{
+					"name": "Get All Servers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_HOST}}/api/servers",
+							"host": [
+								"{{API_HOST}}"
+							],
+							"path": [
+								"api",
+								"servers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Server",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_HOST}}/api/servers/:id",
+							"host": [
+								"{{API_HOST}}"
+							],
+							"path": [
+								"api",
+								"servers",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Domain",
+			"item": [
+				{
+					"name": "Get All Domains",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_HOST}}/api/domains",
+							"host": [
+								"{{API_HOST}}"
+							],
+							"path": [
+								"api",
+								"domains"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Domain",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_HOST}}/api/domains/:name",
+							"host": [
+								"{{API_HOST}}"
+							],
+							"path": [
+								"api",
+								"domains",
+								":name"
+							],
+							"variable": [
+								{
+									"key": "name",
+									"value": "example.com"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Organization",
+			"item": [
+				{
+					"name": "Get All Organizations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_HOST}}/api/organizations",
+							"host": [
+								"{{API_HOST}}"
+							],
+							"path": [
+								"api",
+								"organizations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Organization",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_HOST}}/api/organizations/:id",
+							"host": [
+								"{{API_HOST}}"
+							],
+							"path": [
+								"api",
+								"organizations",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "API_HOST",
+			"value": "http://localhost:3000",
+			"type": "string"
+		}
+	]
+}

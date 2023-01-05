@@ -3,6 +3,7 @@ const authRoute = require('./authRoute');
 const serverRoute = require('./serverRoute');
 const organizationRoute = require('./organizationRoute');
 const domainRoute = require('./domainRoute');
+const credentialRoute = require('./credentialRoute');
 
 const router = express.Router();
 
@@ -22,6 +23,10 @@ const defaultRoutes = [
     {
         path: '/domains',
         route: domainRoute,
+    },
+    {
+        path: '/credentials',
+        route: credentialRoute,
     },
 ];
 

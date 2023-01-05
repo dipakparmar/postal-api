@@ -22,7 +22,8 @@ cp .env.example .env
 - **Authentication**: Email and password login
 - **Domains**: list domains, list domain by id
 - **Organizations**: list organizations, list organization by id
-- **Email Servers**: list email servers, list email server by id
+- **Email Servers**: list email servers, list email server by id, 
+- **Credentials**: list credentials, list credential by id, list credentials by email server id, list credentials with username
 
 
 ## Tech Stack
